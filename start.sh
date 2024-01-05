@@ -91,7 +91,7 @@ src=$(pip install truecallerpy && sudo apt-get install wget && sudo apt-get inst
 sleep 3s
 path=$(pwd)
 read -p "Enter a phone number :- " num
-if [[ != $pwd/Assets ]]
+if [[ ! -d $pwd/Assets ]]
 then 
     mkdir $pwd/Assets
 fi
