@@ -89,10 +89,12 @@ echo "This might can take some time based on your internet speed"
 src=$(pip install truecallerpy && sudo apt-get install wget && sudo apt-get install curl )
 
 sleep 3s
-
+path=$(pwd)
 read -p "Enter a phone number :- " num
-mkdir Assets
-
+if [[ != $pwd/Assets ]]
+then 
+    mkdir Assets
+fi
 truecallerpy -e -n -s $num > Assets/log.txt
 
 grep -e "id" -e "name" -e "gender" -e "access" -e "Formate" -e "number" -e "Code" -e "carrier" -e "type" -e "address" -e "city" -e "timeZone" -e "service" -e "caption" -e "num" -e "spam" -e "num" -e "top" Assets/log.txt > Assets/fil.txt
