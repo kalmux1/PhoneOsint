@@ -91,11 +91,11 @@ src=$(pip install truecallerpy && sudo apt-get install wget && sudo apt-get inst
 sleep 3s
 path=$(pwd)
 read -p "Enter a phone number :- " num
-if [[ ! -d $pwd/Assets ]]
+if [[ ! -d $path/Assets ]]
 then 
-    mkdir $pwd/Assets
+    mkdir $path/Assets
 fi
-truecallerpy -e -n -s $num > Assets/log.txt
+truecallerpy -e -n -s $num > /Assets/log.txt
 
 grep -e "id" -e "name" -e "gender" -e "access" -e "Formate" -e "number" -e "Code" -e "carrier" -e "type" -e "address" -e "city" -e "timeZone" -e "service" -e "caption" -e "num" -e "spam" -e "num" -e "top" Assets/log.txt > Assets/fil.txt
 
