@@ -29,6 +29,8 @@ grep -e "image" Assets/log.txt > Assets/img.txt
 cmd=$(awk '{print $2}' Assets/img.txt > Assets/image.txt)
 image=$(tr '" ,' ' ' < Assets/image.txt )
 
-img=$(curl $image --output Assets/image.png)
+sleep 2s
+echo " Downloading The Profile Image"
+wget -O image.png --no-verbose --show-progress --quiet $image
 
 
