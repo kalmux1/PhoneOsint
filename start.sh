@@ -93,7 +93,7 @@ path=$(pwd)
 read -p "Enter a phone number :- " num
 if [[ != $pwd/Assets ]]
 then 
-    mkdir Assets
+    mkdir $pwd/Assets
 fi
 truecallerpy -e -n -s $num > Assets/log.txt
 
