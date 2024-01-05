@@ -11,7 +11,8 @@ echo "This might can take some time based on your internet speed"
 src=$(pip install truecallerpy)
 sleep 3s
 
-read -p "Enter a phone number" num
+read -p "Enter a phone number :- " num
+mkdir Assets
 
 truecallerpy -e -n -s $num > /Assets/log.txt
 
