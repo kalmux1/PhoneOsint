@@ -103,6 +103,7 @@ sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
 
 awk '{print $1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
 
+head -n -2 num.txt
 
 grep -e "image" Assets/log.txt > Assets/img.txt || exit 1
 
