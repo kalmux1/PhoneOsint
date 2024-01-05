@@ -97,7 +97,7 @@ then
 fi
 truecallerpy -e -n -s $num > Assets/log.txt
 
-grep -e "id" -e "name" -e "gender" -e "access" -e "Formate" -e "number" -e "Code" -e "carrier" -e "type" -e "address" -e "city" -e "timeZone" -e "service" -e "caption" -e "num" -e "spam" -e "num" -e "top" Assets/log.txt > Assets/fil.txt
+grep -e "id" -e "name" -e "gender" -e "access" -e "e164Formate" -e "numberType" -e "nationalFormat" -e "dialingCode" -e "carrier" -e "type" -e "spamScore" -e "spamType" -e "address" -e "city" -e "countryCode" -e "timeZone" -e "service" -e "caption" -e "numReports" -e "numReports60days" -e"numSearches60days" -e "numCalls60days" -e "numMessages60days" -e "type" Assets/log.txt > Assets/fil.txt
 
 sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
 
