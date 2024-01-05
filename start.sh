@@ -97,13 +97,12 @@ then
 fi
 truecallerpy -e -n -s $num > Assets/log.txt
 
-grep -e "id" -e "name" -e "gender" -e "access" -e "e164Formate" -e "numberType" -e "nationalFormat" -e "dialingCode" -e "carrier" -e "type" -e "spamScore" -e "spamType" -e "address" -e "city" -e "countryCode" -e "timeZone" -e "service" -e "caption" -e "numReports" -e "numReports60days" -e"numSearches60days" -e "numCalls60days" -e "numMessages60days" -e "type" Assets/log.txt > Assets/fil.txt
+grep -w -e "id" -e "name" -e "gender" -e "access" -e "e164Formate" -e "numberType" -e "nationalFormat" -e "dialingCode" -e "carrier" -e "type" -e "spamScore" -e "spamType" -e "address" -e "city" -e "countryCode" -e "timeZone" -e "service" -e "caption" -e "numReports" -e "numReports60days" -e"numSearches60days" -e "numCalls60days" -e "numMessages60days" -e "type" Assets/log.txt > Assets/fil.txt
 
 sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
 
 awk '{print $1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
 
-head -n -3 Assets/num.txt
 
 grep -e "image" Assets/log.txt > Assets/img.txt || exit 1
 
