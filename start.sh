@@ -22,11 +22,12 @@ sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
 
 awk '{print $1,"   :   ",$2}' Assets/sym.txt > Assets/num.txt
 
-grep -e "image" log.txt 
-image=$(awk '{print $2}' > img.txt)
-
-
-img=$(curl $image --output image.png)
-
-
 head -n -3 Assets/num.txt
+
+grep -e "image" Assets/log.txt 
+image=$(awk '{print $2}' > Assets/img.txt)
+
+
+img=$(curl $image --output Assets/image.png)
+
+
