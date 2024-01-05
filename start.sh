@@ -16,5 +16,5 @@ mkdir Assets
 
 truecallerpy -e -n -s $num > Assets/log.txt
 
-grep -e "id" -e "name" -e "gender" -e "image" -e "access" -e "Formate" -e "number" -e "Code" -e "carrier" -e "type" -e "address" -e "city" -e "timeZone" -e "service" -e "caption" -e "num" -e "spam" -e "num" -e "top" /Assets/log.txt > Assets/fil.txt
+grep -e "id" -e "name" -e "gender" -e "image" -e "access" -e "Formate" -e "number" -e "Code" -e "carrier" -e "type" -e "address" -e "city" -e "timeZone" -e "service" -e "caption" -e "num" -e "spam" -e "num" -e "top" Assets/log.txt > Assets/fil.txt
 
