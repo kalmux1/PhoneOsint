@@ -81,7 +81,7 @@ On_IWhite='\033[0;107m'   # White
 
 
 
-echo "$Red PhoneOsint $Normal"
+echo -e "$Red PhoneOsint $Normal"
 
 
 echo "Installing Required packages"
