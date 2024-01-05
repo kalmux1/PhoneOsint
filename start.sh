@@ -105,7 +105,7 @@ awk '{print $1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
 
 head -n -3 Assets/num.txt
 
-grep -e "image" Assets/log.txt > Assets/img.txt
+grep -e "image" Assets/log.txt > Assets/img.txt || exit 1
 
 cmd=$(awk '{print $2}' Assets/img.txt > Assets/image.txt)
 image=$(tr '" ,' ' ' < Assets/image.txt )
