@@ -4,7 +4,7 @@ Introducing "PhoneOsint" a powerful Bash tool leveraging the Truecallerpy librar
 
 # **INSTALLATION PROCESS**
 
-# Open Your Terminal And Run Following Commands**
+# Open Your Terminal And Run Following Commands
 
 
 **Update & Upgarde Your Repositories**
