@@ -47,7 +47,8 @@ echo -e " $BICyan             _  _   _     ___ _  _     _
 
 echo -e " $BIYellow                         Installing Required packages
              This might can take some time based on your internet speed $Normal"
-src=$(sudo pip install truecallerpy && sudo apt-get install wget )
+src=$(pip install truecallerpy -y)
+dnl=$(sudo install wget -y)
 echo "
 "
 
