@@ -17,7 +17,7 @@ Purple='\033[0;35m'       # Purple
 Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 Orange='\033[0;33m'       # Orange
-Dark_Gray='\033[1;30'     # Dark Gray
+
 
 # Bold High Intensity
 BIBlack='\033[1;90m'      # Black
@@ -64,7 +64,7 @@ grep -w -e "id" -e "name" -e "gender" -e "access" -e "e164Formate" -e "numberTyp
 
 sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
 
-awk '{print $1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
+awk '{print "    ",$1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
 echo -e "$BIGreen"
 head -n -2 Assets/num.txt
 echo -e "$Normal"
@@ -80,4 +80,4 @@ echo -e "$Orange"
 wget -O image.png --no-verbose --show-progress --quiet $image
 echo -e "$Normal"
 
-echo -e "$Dark_Gray You Can Check Image in the PhoneOsint Directory $Normal"
+echo -e "$BIBlue You Can Check Image in the PhoneOsint Directory $Normal"
