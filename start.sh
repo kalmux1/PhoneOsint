@@ -108,7 +108,7 @@ else
         # Removing Unessasary Special Characters From The extracted file and storing it in sym.txt
         sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
         # Formating final data of the number and storing it in num.txt
-        awk '{print "    ",$1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
+        awk '{print "    ",$1," ===> ",$2,$3,$4}' Assets/sym.txt > Assets/num.txt
         # Printing final information 
         echo -e "$BIGreen"
         head -n -2 Assets/num.txt
