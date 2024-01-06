@@ -16,6 +16,7 @@ Blue='\033[0;34m'         # Blue
 Purple='\033[0;35m'       # Purple
 Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
+Orange='\033[0;33m'       # Orange
 
 # Bold
 BBlack='\033[1;30m'       # Black
@@ -102,7 +103,7 @@ echo "
 "
 sleep 3s
 path=$(pwd)
-read -p "Enter a phone number :- " num
+read -e -p $'\033[1;95m Enter a phone number :- \033[0m' num
 if [[ ! -d $path/Assets ]]
 then 
     mkdir $path/Assets
@@ -114,16 +115,18 @@ grep -w -e "id" -e "name" -e "gender" -e "access" -e "e164Formate" -e "numberTyp
 sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
 
 awk '{print $1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
-
+echo -e "$BIGreen"
 head -n -2 Assets/num.txt
-
+echo -e "$Normal"
 grep -e "image" Assets/log.txt > Assets/img.txt || exit 1
 
 cmd=$(awk '{print $2}' Assets/img.txt > Assets/image.txt)
 image=$(tr '" ,' ' ' < Assets/image.txt )
 
 sleep 2s
-echo " Downloading The Profile Image"
+echo " "
+echo -e "$BIBlue Downloading The Profile Image $Normal"
+echo -e "$Orange"
 wget -O image.png --no-verbose --show-progress --quiet $image
-
+echo -e "$Normal"
 
