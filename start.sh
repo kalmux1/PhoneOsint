@@ -94,6 +94,7 @@ else
         # If Number is Invalid Then exiting
         echo " "
         echo -e "$BIRed         Invalid Number $Normal "
+        exit 1
     else
         if [[ ! -d $path/Assets ]]
         then 
