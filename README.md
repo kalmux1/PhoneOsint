@@ -17,3 +17,7 @@ Introducing "PhoneOsint" a powerful Bash tool leveraging the Truecallerpy librar
     $ sudo chmod +x start.sh
 # **Run Tool Using sudo bash Command** 
     $ sudo bash anon-mac.sh  
+
+
+# **TOOL IMAGE**
+![image](https://github.com/kalmux1/dev-details/blob/main/Tool.png)
