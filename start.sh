@@ -55,7 +55,7 @@ then
     pip=$(sudo apt-get install pip -y)
 fi
 
-src_chk=$(truecallerpy)
+src_chk=$(which truecallerpy)
 if [[ $? != 0 ]]
 then
     src=$(sudo pip install truecallerpy)
