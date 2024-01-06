@@ -7,13 +7,13 @@ Introducing "PhoneOsint" a powerful Bash tool leveraging the Truecallerpy librar
 # Open Your Terminal And Run Following Commands
 
 
-**Update & Upgarde Your Repositories**
+# **Update & Upgarde Your Repositories**
     $ sudo apt-get update && sudo apt-get full-upgrade -y
-**Clone The Repo From Github** 
+# **Clone The Repo From Github** 
     $ git clone https://github.com/kalmux1/PhoneOsint.git 
-**Traverse Into The Phoneosint Directory**
+# **Traverse Into The Phoneosint Directory**
     $ cd PhoneOsint
-**Provide Executable Permission to The Bash Script**
+# **Provide Executable Permission to The Bash Script**
     $ sudo chmod +x start.sh
-**Run Tool Using sudo bash Command** 
+# **Run Tool Using sudo bash Command** 
     $ sudo bash anon-mac.sh  
