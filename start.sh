@@ -48,8 +48,9 @@ echo -e " $BICyan             _  _   _     ___ _  _     _
 echo -e " $BIYellow                         Installing Required packages
              This might can take some time based on your internet speed $Normal"
 
+rsp="pip not found"
 pip_chk=$(which pip)
-if [[ $pip_chk == "pip not found" ]]
+if [[ $pip_chk -eq $rsp ]]
 then
     pip=$(sudo apt-get install pip -y)
 fi
