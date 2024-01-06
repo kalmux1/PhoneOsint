@@ -95,8 +95,8 @@ echo -e " $ICyan             _  _   _     ___ _  _     _
              \_ | \ |_ /--\ | |_ |_/   |_)  |    |\ /--\ |_ |  | |_| /\ 
                                                            $Normal  "
 
-echo "Installing Required packages"
-echo "This might can take some time based on your internet speed"
+echo -e " $BIYellow                         Installing Required packages
+             This might can take some time based on your internet speed $Normal"
 src=$(pip install truecallerpy && sudo apt-get install wget && sudo apt-get install curl )
 
 sleep 3s
