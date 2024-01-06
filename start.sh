@@ -129,6 +129,11 @@ else
         echo -e "$Normal"
         # image msg
         echo -e "$BIBlue You Can Check Image in the PhoneOsint Directory $Normal"
+        echo " "
+        echo " "
+        echo -e "$BIYellow Visit to my github for more hacking tools https://github.com/kalmux1"
+        echo -e "                  Thanks for using this tool                        "
+        echo -e "                         Hack daily                                $Normal"
 
     fi
 fi
