@@ -50,7 +50,7 @@ echo -e " $BIYellow                         Installing Required packages
 
 rsp="pip not found"
 pip_chk=$(which pip)
-if [[ $pip_chk -eq $rsp ]]
+if [[ "$pip_chk" == "$rsp" ]]
 then
     pip=$(sudo apt-get install pip -y)
 fi
