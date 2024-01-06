@@ -81,7 +81,7 @@ On_IWhite='\033[0;107m'   # White
 
 
 
-echo -e "$Red 
+echo -e "$BIRed 
 
 
 ██████╗ ██╗  ██╗ ██████╗ ███╗   ██╗███████╗ ██████╗ ███████╗██╗███╗   ██╗████████╗
@@ -90,7 +90,7 @@ echo -e "$Red
 ██╔═══╝ ██╔══██║██║   ██║██║╚██╗██║██╔══╝  ██║   ██║╚════██║██║██║╚██╗██║   ██║   
 ██║     ██║  ██║╚██████╔╝██║ ╚████║███████╗╚██████╔╝███████║██║██║ ╚████║   ██║   
 ╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝   ╚═╝   V1.0     $Normal"
-echo -e " $ICyan             _  _   _     ___ _  _     _                               
+echo -e " $BICyan             _  _   _     ___ _  _     _                               
              /  |_) |_  /\  | |_ | \   |_) \_/   |/  /\  |  |\/| | | \/ 
              \_ | \ |_ /--\ | |_ |_/   |_)  |    |\ /--\ |_ |  | |_| /\ 
                                                            $Normal  "
@@ -98,7 +98,8 @@ echo -e " $ICyan             _  _   _     ___ _  _     _
 echo -e " $BIYellow                         Installing Required packages
              This might can take some time based on your internet speed $Normal"
 src=$(pip install truecallerpy && sudo apt-get install wget && sudo apt-get install curl )
-
+echo "
+"
 sleep 3s
 path=$(pwd)
 read -p "Enter a phone number :- " num
