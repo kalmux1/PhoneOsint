@@ -47,13 +47,11 @@ echo -e " $BICyan             _  _   _     ___ _  _     _
 
 echo -e " $BIYellow                         Installing Required packages
              This might can take some time based on your internet speed $Normal"
-src=$(pip install truecallerpy -y)
+src=$(pip install truecallerpy)
 dnl=$(sudo install wget -y)
 echo "
 "
 
-
-sleep 3s
 path=$(pwd)
 read -e -p $'\033[1;95m Enter a phone number :- \033[0m' num
 if [[ ! -d $path/Assets ]]
