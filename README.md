@@ -20,4 +20,4 @@ Introducing "PhoneOsint" a powerful Bash tool leveraging the Truecallerpy librar
 
 
 # **TOOL IMAGE**
-![image](https://github.com/kalmux1/dev-details/blob/main/Tool.png)
+![image](https://github.com/kalmux1/PhoneOsint/blob/main/Tool.png)
