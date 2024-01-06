@@ -72,11 +72,6 @@ if [[ $? != 0 ]]
 then
     dnl=$(truecallerpy login)
 else 
-    main;
-fi
-
-main ()
-{
     echo "
     "
     path=$(pwd)
@@ -109,4 +104,4 @@ main ()
 
     echo -e "$BIBlue You Can Check Image in the PhoneOsint Directory $Normal"
 
-}
+fi
