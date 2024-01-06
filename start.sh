@@ -72,7 +72,7 @@ if [[ $? != 0 ]]
 then
     dnl=$(truecallerpy login)
 else 
-    main
+    main;
 fi
 
 main ()
