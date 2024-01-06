@@ -76,32 +76,38 @@ else
     "
     path=$(pwd)
     read -e -p $'\033[1;95m Enter a phone number :- \033[0m' num
-    if [[ ! -d $path/Assets ]]
+
+    len=${#num}
+    if [[ $len -gt 10 ]]
     then 
-        mkdir $path/Assets
+        echo " Invalid Number "
+    else
+        if [[ ! -d $path/Assets ]]
+        then 
+            mkdir $path/Assets
+        fi
+        truecallerpy -e -n -s $num > Assets/log.txt
+
+        grep -w -e "id" -e "name" -e "gender" -e "access" -e "e164Formate" -e "numberType" -e "nationalFormat" -e "dialingCode" -e "carrier" -e "type" -e "spamScore" -e "spamType" -e "address" -e "city" -e "countryCode" -e "timeZone" -e "service" -e "caption" -e "numReports" -e "numReports60days" -e"numSearches60days" -e "numCalls60days" -e "numMessages60days" -e "type" Assets/log.txt > Assets/fil.txt
+
+        sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
+
+        awk '{print "    ",$1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
+        echo -e "$BIGreen"
+        head -n -2 Assets/num.txt
+        echo -e "$Normal"
+        grep -e "image" Assets/log.txt > Assets/img.txt || exit 1
+
+        cmd=$(awk '{print $2}' Assets/img.txt > Assets/image.txt)
+        image=$(tr '" ,' ' ' < Assets/image.txt )
+
+        sleep 2s
+        echo " "
+        echo -e "$BIBlue Downloading The Profile Image $Normal"
+        echo -e "$Orange"
+        wget -O image.png --no-verbose --show-progress --quiet $image
+        echo -e "$Normal"
+
+        echo -e "$BIBlue You Can Check Image in the PhoneOsint Directory $Normal"
     fi
-    truecallerpy -e -n -s $num > Assets/log.txt
-
-    grep -w -e "id" -e "name" -e "gender" -e "access" -e "e164Formate" -e "numberType" -e "nationalFormat" -e "dialingCode" -e "carrier" -e "type" -e "spamScore" -e "spamType" -e "address" -e "city" -e "countryCode" -e "timeZone" -e "service" -e "caption" -e "numReports" -e "numReports60days" -e"numSearches60days" -e "numCalls60days" -e "numMessages60days" -e "type" Assets/log.txt > Assets/fil.txt
-
-    sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
-
-    awk '{print "    ",$1," ===> ",$2}' Assets/sym.txt > Assets/num.txt
-    echo -e "$BIGreen"
-    head -n -2 Assets/num.txt
-    echo -e "$Normal"
-    grep -e "image" Assets/log.txt > Assets/img.txt || exit 1
-
-    cmd=$(awk '{print $2}' Assets/img.txt > Assets/image.txt)
-    image=$(tr '" ,' ' ' < Assets/image.txt )
-
-    sleep 2s
-    echo " "
-    echo -e "$BIBlue Downloading The Profile Image $Normal"
-    echo -e "$Orange"
-    wget -O image.png --no-verbose --show-progress --quiet $image
-    echo -e "$Normal"
-
-    echo -e "$BIBlue You Can Check Image in the PhoneOsint Directory $Normal"
-
 fi
