@@ -82,22 +82,16 @@ On_IWhite='\033[0;107m'   # White
 
 
 echo -e "$Red 
- .S_sSSs     .S    S.     sSSs_sSSs     .S_sSSs      sSSs    sSSs_sSSs      sSSs   .S   .S_sSSs    sdSS_SSSSSSbs  
-.SS~YS%%b   .SS    SS.   d%%SP~YS%%b   .SS~YS%%b    d%%SP   d%%SP~YS%%b    d%%SP  .SS  .SS~YS%%b   YSSS~S%SSSSSP  
-S%S   `S%b  S%S    S%S  d%S'     `S%b  S%S   `S%b  d%S'    d%S'     `S%b  d%S'    S%S  S%S   `S%b       S%S       
-S%S    S%S  S%S    S%S  S%S       S%S  S%S    S%S  S%S     S%S       S%S  S%|     S%S  S%S    S%S       S%S       
-S%S    d*S  S%S SSSS%S  S&S       S&S  S%S    S&S  S&S     S&S       S&S  S&S     S&S  S%S    S&S       S&S       
-S&S   .S*S  S&S  SSS&S  S&S       S&S  S&S    S&S  S&S_Ss  S&S       S&S  Y&Ss    S&S  S&S    S&S       S&S       
-S&S_sdSSS   S&S    S&S  S&S       S&S  S&S    S&S  S&S~SP  S&S       S&S  `S&&S   S&S  S&S    S&S       S&S       
-S&S~YSSY    S&S    S&S  S&S       S&S  S&S    S&S  S&S     S&S       S&S    'S*S  S&S  S&S    S&S       S&S       
-S*S         S*S    S*S  S*b       d*S  S*S    S*S  S*b     S*b       d*S     l*S  S*S  S*S    S*S       S*S       
-S*S         S*S    S*S  S*S.     .S*S  S*S    S*S  S*S.    S*S.     .S*S    .S*P  S*S  S*S    S*S       S*S       
-S*S         S*S    S*S   SSSbs_sdSSS   S*S    S*S   SSSbs   SSSbs_sdSSS   sSS*S   S*S  S*S    S*S       S*S       
-S*S         SSS    S*S    YSSP~YSSY    S*S    SSS    YSSP    YSSP~YSSY    YSS    S*S  S*S    SSS       S*S       
-SP                 SP                  SP                                         SP   SP               SP        
-Y                  Y                   Y                                          Y    Y                Y'       
-
-                                                                                                                  $Normal"
+8888888b.  888                                  .d88888b.           d8b          888    
+888   Y88b 888                                 d88P" "Y88b          Y8P          888    
+888    888 888                                 888     888                       888    
+888   d88P 88888b.   .d88b.  88888b.   .d88b.  888     888 .d8888b  888 88888b.  888888 
+8888888P"  888 "88b d88""88b 888 "88b d8P  Y8b 888     888 88K      888 888 "88b 888    
+888        888  888 888  888 888  888 88888888 888     888 "Y8888b. 888 888  888 888    
+888        888  888 Y88..88P 888  888 Y8b.     Y88b. .d88P      X88 888 888  888 Y88b.  
+888        888  888  "Y88P"  888  888  "Y8888   "Y88888P"   88888P' 888 888  888  "Y888 
+                                                                                        
+                                                                                  $Normal"
 
 
 echo "Installing Required packages"
