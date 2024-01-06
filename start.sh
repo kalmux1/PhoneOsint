@@ -80,7 +80,8 @@ else
     len=${#num}
     if [[ $len -gt 10 ]]
     then 
-        echo " Invalid Number "
+        echo " "
+        echo -e "$BIRed    Invalid Number $Normal "
     else
         if [[ ! -d $path/Assets ]]
         then 
