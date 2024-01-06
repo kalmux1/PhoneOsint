@@ -81,7 +81,23 @@ On_IWhite='\033[0;107m'   # White
 
 
 
-echo -e "$Red PhoneOsint $Normal"
+echo -e "$Red 
+ .S_sSSs     .S    S.     sSSs_sSSs     .S_sSSs      sSSs    sSSs_sSSs      sSSs   .S   .S_sSSs    sdSS_SSSSSSbs  
+.SS~YS%%b   .SS    SS.   d%%SP~YS%%b   .SS~YS%%b    d%%SP   d%%SP~YS%%b    d%%SP  .SS  .SS~YS%%b   YSSS~S%SSSSSP  
+S%S   `S%b  S%S    S%S  d%S'     `S%b  S%S   `S%b  d%S'    d%S'     `S%b  d%S'    S%S  S%S   `S%b       S%S       
+S%S    S%S  S%S    S%S  S%S       S%S  S%S    S%S  S%S     S%S       S%S  S%|     S%S  S%S    S%S       S%S       
+S%S    d*S  S%S SSSS%S  S&S       S&S  S%S    S&S  S&S     S&S       S&S  S&S     S&S  S%S    S&S       S&S       
+S&S   .S*S  S&S  SSS&S  S&S       S&S  S&S    S&S  S&S_Ss  S&S       S&S  Y&Ss    S&S  S&S    S&S       S&S       
+S&S_sdSSS   S&S    S&S  S&S       S&S  S&S    S&S  S&S~SP  S&S       S&S  `S&&S   S&S  S&S    S&S       S&S       
+S&S~YSSY    S&S    S&S  S&S       S&S  S&S    S&S  S&S     S&S       S&S    `S*S  S&S  S&S    S&S       S&S       
+S*S         S*S    S*S  S*b       d*S  S*S    S*S  S*b     S*b       d*S     l*S  S*S  S*S    S*S       S*S       
+S*S         S*S    S*S  S*S.     .S*S  S*S    S*S  S*S.    S*S.     .S*S    .S*P  S*S  S*S    S*S       S*S       
+S*S         S*S    S*S   SSSbs_sdSSS   S*S    S*S   SSSbs   SSSbs_sdSSS   sSS*S   S*S  S*S    S*S       S*S       
+S*S         SSS    S*S    YSSP~YSSY    S*S    SSS    YSSP    YSSP~YSSY    YSS'    S*S  S*S    SSS       S*S       
+SP                 SP                  SP                                         SP   SP               SP        
+Y                  Y                   Y                                          Y    Y                Y       
+  
+                                                                                                                  $Normal"
 
 
 echo "Installing Required packages"
