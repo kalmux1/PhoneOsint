@@ -18,6 +18,8 @@ Introducing "PhoneOsint" a powerful Bash tool leveraging the Truecallerpy librar
 # **Run Tool Using sudo bash Command** 
     $ sudo bash anon-mac.sh  
 
+When running the script for the first time, you'll be prompted to log in. Provide your phone number, and then a One-Time Password (OTP) will be sent to you via WhatsApp from Truecaller. Enter the OTP to complete the login process. Once done, rerun the script.
+
 
 # **TOOL IMAGE**
 ![image](https://github.com/kalmux1/PhoneOsint/blob/main/Tool.png)
