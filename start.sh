@@ -77,7 +77,7 @@ fi
 
 # Checking For Login ID
 
-login=$(truecallerpy --installationid > Assets/login.txt)
+login=$(truecallerpy --installationid > conf.txt)
 if [[ $login == "Please login to your account." ]]
 then
     dnl=$(truecallerpy login)
