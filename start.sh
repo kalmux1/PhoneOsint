@@ -107,7 +107,7 @@ else
         # Extracting Requiered output and storing it in fil.txt
         grep -w -e "id" -e "name" -e "gender" -e "access" -e "e164Formate" -e "numberType" -e "nationalFormat" -e "dialingCode" -e "carrier" -e "type" -e "spamScore" -e "spamType" -e "address" -e "city" -e "countryCode" -e "timeZone" -e "service" -e "caption" -e "numReports" -e "numReports60days" -e"numSearches60days" -e "numCalls60days" -e "numMessages60days" -e "type" Assets/log.txt > Assets/fil.txt
         # Removing Unessasary Special Characters From The extracted file and storing it in sym.txt
-        sed 's/[^[:alnum:][:space:]]//g' Assets/fil.txt > Assets/sym.txt
+        sed 's/[^a-zA-Z0-9@]//g' Assets/fil.txt > Assets/sym.txt
         # Formating final data of the number and storing it in num.txt
         awk '{print "    ",$1," ===> ",$2,$3,$4}' Assets/sym.txt > Assets/num.txt
         # Printing final information 
