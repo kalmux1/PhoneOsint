@@ -133,8 +133,8 @@ else
         echo " "
         echo " "
         echo -e "$BIYellow            Visit to my github for more hacking tools https://github.com/kalmux1"
-        echo -e "                                 Thanks for using this tool                        "
-        echo -e "                                       Hack daily                                $Normal"
+        echo -e "                                Thanks for using this tool                        "
+        echo -e "                                      Hack daily                                $Normal"
 
     fi
 fi
