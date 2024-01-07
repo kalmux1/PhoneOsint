@@ -77,11 +77,11 @@ fi
 
 # Checking For Login ID
 
-login=$(truecallerpy --installationid > conf.txt)
-echo $login
-if [[ $login -eq "Please login to your account." ]]
+truecallerpy --installationid > conf.txt
+login=$(grep -e "-" conf.txt)
+if [[ $? != 0 ]]
 then
-    dnl=$(truecallerpy login)
+    truecallerpy login
 else 
     echo "
     "
