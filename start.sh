@@ -79,7 +79,7 @@ fi
 
 login=$(truecallerpy --installationid > conf.txt)
 echo $login
-if [[ $login == "Please login to your account." ]]
+if [[ $login -eq "Please login to your account." ]]
 then
     dnl=$(truecallerpy login)
 else 
