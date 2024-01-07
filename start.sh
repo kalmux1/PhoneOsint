@@ -78,6 +78,7 @@ fi
 # Checking For Login ID
 
 login=$(truecallerpy --installationid > conf.txt)
+echo $login
 if [[ $login == "Please login to your account." ]]
 then
     dnl=$(truecallerpy login)
@@ -89,7 +90,7 @@ else
     read -e -p $'\033[1;95m Enter a phone number :- \033[0m' num
     # Checking Length of Number
     len=${#num}
-    if [[ $len -gt 10 ]]
+    if [[ $len -lt 9 && $len -gt 10 ]]
     then 
         # If Number is Invalid Then exiting
         echo " "
