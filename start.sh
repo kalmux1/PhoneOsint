@@ -78,7 +78,7 @@ fi
 # Checking For Login ID
 
 login=$(truecallerpy --installationid)
-if [[ $? != 0 ]]
+if [[ $login == "Please login to your account." ]]
 then
     dnl=$(truecallerpy login)
 else 
@@ -137,9 +137,3 @@ else
 
     fi
 fi
-
-#echo " "
-#echo " "
-#echo -e "$BIYellow Visit to my github for more hacking tools https://github.com/kalmux1"
-#echo -e "                  Thanks for using this tool                        "
-#echo -e "                         Hack daily                                $Normal"
